@@ -6,4 +6,4 @@ Using C++ and Visual Studio since it has been a while since I used them.
 
 I've tried to use an optimized yet simple approach while still focusing on readability.
 
-`TODO: Add non-visual-studio way to build
+`TODO: Add non-visual-studio way to build for other platforms`
