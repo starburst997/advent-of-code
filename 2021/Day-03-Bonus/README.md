@@ -56,6 +56,7 @@ For example, to determine the **oxygen generator rating** value using the same e
 - In the fourth position, two of the three numbers have a `1`, so keep those two: `10110` and `10111`.
 - In the fifth position, there are an equal number of `0` bits and `1` bits (one each). So, to find the **oxygen generator rating**, keep the number with a `1` in that position: `10111`.
 - As there is only one number left, stop; the **oxygen generator rating** is `10111`, or **23** in decimal.
+
 Then, to determine the **CO2 scrubber rating** value from the same example above:
 
 - Start again with all 12 numbers and consider only the first bit of each number. There are fewer `0` bits (5) than `1` bits (7), so keep only the 5 numbers with a `0` in the first position: `00100`, `01111`, `00111`, `00010`, and `01010`.
