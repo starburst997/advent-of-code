@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool ReadLineInt(ifstream &stream, int &value) {
+bool ReadLineInt(ifstream& stream, int& value) {
 	string line;
 	if (!getline(stream, line)) return false;
 
