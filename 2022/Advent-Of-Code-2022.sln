@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-01", "Day-01\Day-01.vcxproj", "{10CA5B5F-B20D-4EBA-A9E4-C4AB38653F55}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_01", "Day_01\Day_01.vcxproj", "{10CA5B5F-B20D-4EBA-A9E4-C4AB38653F55}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-01-Bonus", "Day-01-Bonus\Day-01-Bonus.vcxproj", "{7A918580-88FC-4114-AD60-112424945947}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_01_Bonus", "Day_01_Bonus\Day_01_Bonus.vcxproj", "{7A918580-88FC-4114-AD60-112424945947}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-02", "Day-02\Day-02.vcxproj", "{35A57FA0-A824-448D-ACEB-01491B2A3065}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_02", "Day_02\Day_02.vcxproj", "{35A57FA0-A824-448D-ACEB-01491B2A3065}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-02-Bonus", "Day-02-Bonus\Day-02-Bonus.vcxproj", "{968218DE-EDEC-4109-9625-35CCEF48FDE5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_02_Bonus", "Day_02_Bonus\Day_02_Bonus.vcxproj", "{968218DE-EDEC-4109-9625-35CCEF48FDE5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-03", "Day-03\Day-03.vcxproj", "{9D6BEA35-9200-4652-AEFF-A63EC777ED94}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_03", "Day_03\Day_03.vcxproj", "{9D6BEA35-9200-4652-AEFF-A63EC777ED94}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-03-Bonus", "Day-03-Bonus\Day-03-Bonus.vcxproj", "{DBE29D3F-7427-4C34-867E-6E30A00472DE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_03_Bonus", "Day_03_Bonus\Day_03_Bonus.vcxproj", "{DBE29D3F-7427-4C34-867E-6E30A00472DE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_04", "Day_04\Day_04.vcxproj", "{8CAAF770-C052-4F6C-B297-5B8764305E1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{DBE29D3F-7427-4C34-867E-6E30A00472DE}.Release|x64.Build.0 = Release|x64
 		{DBE29D3F-7427-4C34-867E-6E30A00472DE}.Release|x86.ActiveCfg = Release|Win32
 		{DBE29D3F-7427-4C34-867E-6E30A00472DE}.Release|x86.Build.0 = Release|Win32
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Debug|x64.ActiveCfg = Debug|x64
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Debug|x64.Build.0 = Debug|x64
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Debug|x86.ActiveCfg = Debug|Win32
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Debug|x86.Build.0 = Debug|Win32
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Release|x64.ActiveCfg = Release|x64
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Release|x64.Build.0 = Release|x64
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Release|x86.ActiveCfg = Release|Win32
+		{8CAAF770-C052-4F6C-B297-5B8764305E1B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

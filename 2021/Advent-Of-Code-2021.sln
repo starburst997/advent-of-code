@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-01", "Day-01\Day-01.vcxproj", "{DC77925A-5A81-41C6-A101-C3C97A884687}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_01", "Day_01\Day_01.vcxproj", "{DC77925A-5A81-41C6-A101-C3C97A884687}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-01-Bonus", "Day-01-Bonus\Day-01-Bonus.vcxproj", "{AC20E182-FFBF-4652-BFD2-1DA938B4AC4D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_01_Bonus", "Day_01_Bonus\Day_01_Bonus.vcxproj", "{AC20E182-FFBF-4652-BFD2-1DA938B4AC4D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-02", "Day-02\Day-02.vcxproj", "{5908E163-54A1-4DD7-8DA9-2B0D1CC1730D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_02", "Day_02\Day_02.vcxproj", "{5908E163-54A1-4DD7-8DA9-2B0D1CC1730D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-02-Bonus", "Day-02-Bonus\Day-02-Bonus.vcxproj", "{23B4CE27-5AD7-46AD-A8FC-7D6FCACA6937}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_02_Bonus", "Day_02_Bonus\Day_02_Bonus.vcxproj", "{23B4CE27-5AD7-46AD-A8FC-7D6FCACA6937}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-03", "Day-03\Day-03.vcxproj", "{773418C9-1290-4E6F-A43D-5F7185CC5BC4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_03", "Day_03\Day_03.vcxproj", "{773418C9-1290-4E6F-A43D-5F7185CC5BC4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day-03-Bonus", "Day-03-Bonus\Day-03-Bonus.vcxproj", "{D3AA6E67-D84E-4A97-A1F6-E13E2172E186}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day_03_Bonus", "Day_03_Bonus\Day_03_Bonus.vcxproj", "{D3AA6E67-D84E-4A97-A1F6-E13E2172E186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
