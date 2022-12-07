@@ -20,37 +20,42 @@ int main(int argc, char* argv[])
 	}
 
 	int sum = 0;
-	int counter = 0;
 
 	string line;
 	map<char, int> compartment = {};
 	while (getline(stream, line))
 	{
-		cout << endl << line << endl;
+		compartment.clear();
 
-		// Add first half to a map
-		const int total = line.length() / 2;
-		for (int i = 0; i < total; i++)
-		{
-			compartment[line[i]] = 1;
-		}
+		// Add first line
+		for (char& i : line) compartment[i] = 1;
 
-		// Check if char exists in map
-		for (int i = total; i < line.length(); i++)
+		// Second line
+		if (!getline(stream, line)) break;
+		for (char& i : line)
 		{
-			char c = line[i];
-			if (compartment.find(c) != compartment.end())
+			auto it = compartment.find(i);
+			if (it != compartment.end())
 			{
-				cout << "Found " << c << endl;
-
-				sum += c <= 'Z' ? (c - 'A' + 27) : (c - 'a' + 1);
-				break;
+				// Mark as found on second line
+				it->second = 2;
 			}
 		}
 
-		if (((++counter) % 3) == 0)
+		// Third line
+		if (!getline(stream, line)) break;
+		for (char& i : line)
 		{
-			compartment.clear();
+			auto it = compartment.find(i);
+			if (it != compartment.end())
+			{
+				if (it->second == 2)
+				{
+					// Found it!
+					sum += i <= 'Z' ? (i - 'A' + 27) : (i - 'a' + 1);
+					break;
+				}
+			}
 		}
 	}
 
