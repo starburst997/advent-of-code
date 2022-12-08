@@ -62,4 +62,5 @@ int main(int argc, char* argv[])
     }
 
     cout << endl << "Answer: " << score << endl;
+    return 0;
 }

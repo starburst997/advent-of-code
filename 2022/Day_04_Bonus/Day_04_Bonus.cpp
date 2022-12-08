@@ -42,9 +42,15 @@ bool read_pair(ifstream& stream, elf& elf1, elf& elf2)
     return true;
 }
 
+bool in_between(elf a, elf b)
+{
+    return (a.start >= b.start && a.start <= b.end) ||
+        (a.end >= b.start && a.end <= b.end);
+}
+
 int main(int argc, char* argv[])
 {
-    cout << "Advent of Code 2022 - Day 04" << endl << endl;
+    cout << "Advent of Code 2022 - Day 04 (part 2)" << endl << endl;
 
     string path = "Inputs.txt";
     if (argc >= 2) path = argv[1];
@@ -64,8 +70,7 @@ int main(int argc, char* argv[])
         cout << "Elf1: " << elf1.start << " / " << elf1.end << endl;
         cout << "Elf2: " << elf2.start << " / " << elf2.end << endl << endl;
 
-        if ((elf1.start >= elf2.start && elf1.end <= elf2.end) ||
-            (elf2.start >= elf1.start && elf2.end <= elf1.end))
+        if (in_between(elf1, elf2) || in_between(elf2, elf1))
         {
             count++;
         }

@@ -73,4 +73,5 @@ int main(int argc, char* argv[])
     }
 
     cout << endl << "Answer: " << count << endl;
+    return 0;
 }

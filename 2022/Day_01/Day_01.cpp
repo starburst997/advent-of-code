@@ -46,4 +46,5 @@ int main(int argc, char* argv[])
     if (count > max) max = count;
 
     cout << endl << "Answer: " << max << endl;
+    return 0;
 }
