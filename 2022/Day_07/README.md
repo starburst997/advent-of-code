@@ -4,7 +4,7 @@ You can hear birds chirping and raindrops hitting leaves as the expedition proce
 
 The device the Elves gave you has problems with more than just its communication system. You try to run a system update:
 
-```
+```console
 $ system-update --please --pretty-please-with-sugar-on-top
 Error: No space left on device
 Perhaps you can delete some files to make space for the update?
