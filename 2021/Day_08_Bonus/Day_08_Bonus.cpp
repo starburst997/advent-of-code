@@ -10,6 +10,11 @@ int bitwise(const char c, map<char, char>& cypher)
     return 1 << (cypher[c] - 'a');
 }
 
+int bitwise(const char c)
+{
+    return 1 << (c - 'a');
+}
+
 void add_reference(const string& line, const int start, const int end, string (&references)[10], map<char, int>& counter)
 {
     const int count = end - start;
@@ -60,8 +65,8 @@ void decode(const string& line, const int start, const int end, map<char, char>&
         case 6: // 0, 6, 9
             // Create the bitwise unique number and get the current #
             for (int i = start; i < end; i++)
-                n |= 1 << (line[i] - 'a');
-        
+                n |= bitwise(line[i], cypher);
+            
             n = dictionary[n];
             break;
     }
@@ -110,13 +115,95 @@ int main(int argc, char* argv[])
     // f* = 9
     // g = 7
 
+    // Now using bitwise op, create a unique number from the cypher for each number so we can look them up efficiently
+    // I'm doing this because everything is scrambled (I think?) and wanted to skip looping over and over
+    map<int, int> dictionary{};
+    
+    dictionary[
+        bitwise('a') |
+        bitwise('b') |
+        bitwise('c') |
+        bitwise('e') |
+        bitwise('f') |
+        bitwise('g')
+    ] = 0;
+
+    dictionary[
+        bitwise('c') |
+        bitwise('f')
+    ] = 1;
+
+    dictionary[
+        bitwise('a') |
+        bitwise('c') |
+        bitwise('d') |
+        bitwise('e') |
+        bitwise('g')
+    ] = 2;
+
+    dictionary[
+        bitwise('a') |
+        bitwise('c') |
+        bitwise('d') |
+        bitwise('f') |
+        bitwise('g')
+    ] = 3;
+
+    dictionary[
+        bitwise('b') |
+        bitwise('c') |
+        bitwise('d') |
+        bitwise('f')
+    ] = 4;
+
+    dictionary[
+        bitwise('a') |
+        bitwise('b') |
+        bitwise('d') |
+        bitwise('f') |
+        bitwise('g')
+    ] = 5;
+
+    dictionary[
+        bitwise('a') |
+        bitwise('b') |
+        bitwise('d') |
+        bitwise('e') |
+        bitwise('f') |
+        bitwise('g')
+    ] = 6;
+
+    dictionary[
+        bitwise('a') |
+        bitwise('c') |
+        bitwise('f')
+    ] = 7;
+
+    dictionary[
+        bitwise('a') |
+        bitwise('b') |
+        bitwise('c') |
+        bitwise('d') |
+        bitwise('e') |
+        bitwise('f') |
+        bitwise('g')
+    ] = 8;
+
+    dictionary[
+        bitwise('a') |
+        bitwise('b') |
+        bitwise('c') |
+        bitwise('d') |
+        bitwise('f') |
+        bitwise('g')
+    ] = 9;
+    
     // I'm guessing that with only the "unique' number we can deduce the rest
     // So find all unique number and save them to be processed afterward
     string line;
     string reference[10]{};   // Some unused space, but should be more efficient than a map
     map<char, char> cypher{}; // Was using an array before but it's harder to read, performance hit is minimal
     map<char, int> counter{};
-    map<int, int> dictionary{};
     
     while (getline(stream, line))
     {
@@ -152,13 +239,13 @@ int main(int argc, char* argv[])
             switch (counter[i])
             {
                 case 6:
-                    cypher['b'] = i;
+                    cypher[i] = 'b';
                     break;
                 case 4:
-                    cypher['e'] = i;
+                    cypher[i] = 'e';
                     break;
                 case 9:
-                    cypher['f'] = i;
+                    cypher[i] = 'f';
                     break;
             }
         }
@@ -170,9 +257,9 @@ int main(int argc, char* argv[])
         {
             // Here, I'm looping because I think the order is scrambled? Otherwise we could've just check the "position" directly
             const char c = num_str[i];
-            if (c == cypher['f']) continue;
+            if ('f' == cypher[c]) continue;
 
-            cypher['c'] = c;
+            cypher[c] = 'c';
             break;
         }
 
@@ -181,9 +268,9 @@ int main(int argc, char* argv[])
         for (int i = 0; i < 3; i++)
         {
             const char c = num_str[i];
-            if (c == cypher['f'] || c == cypher['c']) continue;
+            if ('f' == cypher[c] || 'c' == cypher[c]) continue;
 
-            cypher['a'] = c;
+            cypher[c] = 'a';
             break;
         }
 
@@ -192,9 +279,9 @@ int main(int argc, char* argv[])
         for (int i = 0; i < 4; i++)
         {
             const char c = num_str[i];
-            if (c == cypher['f'] || c == cypher['c'] || c == cypher['b']) continue;
+            if ('f' == cypher[c] || 'c' == cypher[c] || 'b' == cypher[c]) continue;
 
-            cypher['d'] = c;
+            cypher[c] = 'd';
             break;
         }
 
@@ -203,97 +290,13 @@ int main(int argc, char* argv[])
         for (int i = 0; i < 7; i++)
         {
             const char c = num_str[i];
-            if (c == cypher['a'] || c == cypher['b'] || c == cypher['c'] ||
-                c == cypher['d'] || c == cypher['e'] || c == cypher['f'])
+            if ('a' == cypher[c] || 'b' == cypher[c] || 'c' == cypher[c] ||
+                'd' == cypher[c] || 'e' == cypher[c] || 'f' == cypher[c])
                 continue;
 
-            cypher['g'] = c;
+            cypher[c] = 'g';
             break;
         }
-
-        // Now using bitwise op, create a unique number from the cypher for each number so we can look them up efficiently
-        // I'm doing this because everything is scrambled (I think?) and wanted to skip looping over and over
-        dictionary.clear();
-
-        // Maybe I could skip this and do it once? (Without the cypher) 
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('b', cypher) |
-            bitwise('c', cypher) |
-            bitwise('e', cypher) |
-            bitwise('f', cypher) |
-            bitwise('g', cypher)
-        ] = 0;
-
-        dictionary[
-            bitwise('c', cypher) |
-            bitwise('f', cypher)
-        ] = 1;
-
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('c', cypher) |
-            bitwise('d', cypher) |
-            bitwise('e', cypher) |
-            bitwise('g', cypher)
-        ] = 2;
-
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('c', cypher) |
-            bitwise('d', cypher) |
-            bitwise('f', cypher) |
-            bitwise('g', cypher)
-        ] = 3;
-
-        dictionary[
-            bitwise('b', cypher) |
-            bitwise('c', cypher) |
-            bitwise('d', cypher) |
-            bitwise('f', cypher)
-        ] = 4;
-
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('b', cypher) |
-            bitwise('d', cypher) |
-            bitwise('f', cypher) |
-            bitwise('g', cypher)
-        ] = 5;
-
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('b', cypher) |
-            bitwise('d', cypher) |
-            bitwise('e', cypher) |
-            bitwise('f', cypher) |
-            bitwise('g', cypher)
-        ] = 6;
-
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('c', cypher) |
-            bitwise('f', cypher)
-        ] = 7;
-
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('b', cypher) |
-            bitwise('c', cypher) |
-            bitwise('d', cypher) |
-            bitwise('e', cypher) |
-            bitwise('f', cypher) |
-            bitwise('g', cypher)
-        ] = 8;
-
-        dictionary[
-            bitwise('a', cypher) |
-            bitwise('b', cypher) |
-            bitwise('c', cypher) |
-            bitwise('d', cypher) |
-            bitwise('f', cypher) |
-            bitwise('g', cypher)
-        ] = 9;
         
         // We can then proceed to decode the numbers
         int decimal = 4;

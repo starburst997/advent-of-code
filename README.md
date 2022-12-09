@@ -15,3 +15,4 @@ I would love to see a mix of [Advent of Code](https://adventofcode.com/) and [EX
 Please feel free to [point out](https://github.com/starburst997/advent-of-code/issues) any optimization that could've been used or different ways I could've approach a problem to run it faster. I *love* to improve, this is somewhat a training exercise as well.
 
 `TODO: Add non-visual-studio way to build for other platforms`
+`TODO: Add list of all puzzles in README`
