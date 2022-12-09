@@ -10,7 +10,7 @@ I'm trying to keep things running at `O(log n)` here at the very least! And no f
 
 I'm not playing for the leaderboard (which is based on submitting the answer as fast as possible at midnight) but I might try at least once or twice to see just how fast people submit it (I'll probably switch to C# for that or even JS).
 
-I would love to see a mix of [Advent of Code](https://adventofcode.com/) and [EXAPUNKS](https://store.steampowered.com/app/716490/EXAPUNKS/) where the solutions are compiled and scored based on CPU cycles, memory, lines of code, etc. Grouped by language or global.
+I would love to see a mix of [Advent of Code](https://adventofcode.com/) and [EXAPUNKS](https://store.steampowered.com/app/716490/EXAPUNKS/) where the solutions are compiled and scored based on CPU cycles, memory, lines of code, etc. Grouped by language or global. Some inputs could be so big that careful parsing and memory management is needed, would spice things up.
 
 Please feel free to [point out](https://github.com/starburst997/advent-of-code/issues) any optimization that could've been used or different ways I could've approach a problem to run it faster. I *love* to improve, this is somewhat a training exercise as well.
 
