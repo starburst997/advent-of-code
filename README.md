@@ -14,27 +14,31 @@ I'm not playing for the leaderboard (which is based on submitting the answer as 
 
 | Day | Title            | Part 1 | Part 2 | AoC |
 |-----|------------------|--------|--------|-----|
-| 1 | Calorie Counting | [Source](2022/Day_01/Day_01.cpp) | [Source](2022/Day_01_Bonus/Day_01_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/1) |
-| 2 | Rock Paper Scissors | [Source](2022/Day_02/Day_02.cpp) | [Source](2022/Day_02_Bonus/Day_02_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/2) |
-| 3 | Rucksack Reorganization | [Source](2022/Day_03/Day_03.cpp) | [Source](2022/Day_03_Bonus/Day_03_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/3) |
-| 4 | Camp Cleanup | [Source](2022/Day_04/Day_04.cpp) | [Source](2022/Day_04_Bonus/Day_04_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/4) |
-| 5 | Supply Stacks | [Source](2022/Day_05/Day_05.cpp) | [Source](2022/Day_05_Bonus/Day_05_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/5) |
-| 6 | Tuning Trouble | [Source](2022/Day_06/Day_06.cpp) | [Source](2022/Day_06_Bonus/Day_06_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/6) |
-| 7 | No Space Left On Device | [Source](2022/Day_07/Day_07.cpp) | [Source](2022/Day_07_Bonus/Day_07_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/7) |
-| 8 | Treetop Tree House | [Source](2022/Day_08/Day_08.cpp) | [Source](2022/Day_08_Bonus/Day_08_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/8) |
+| 1  | Calorie Counting | [Source](2022/Day_01/Day_01.cpp) | [Source](2022/Day_01_Bonus/Day_01_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/1) |
+| 2  | Rock Paper Scissors | [Source](2022/Day_02/Day_02.cpp) | [Source](2022/Day_02_Bonus/Day_02_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/2) |
+| 3  | Rucksack Reorganization | [Source](2022/Day_03/Day_03.cpp) | [Source](2022/Day_03_Bonus/Day_03_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/3) |
+| 4  | Camp Cleanup | [Source](2022/Day_04/Day_04.cpp) | [Source](2022/Day_04_Bonus/Day_04_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/4) |
+| 5  | Supply Stacks | [Source](2022/Day_05/Day_05.cpp) | [Source](2022/Day_05_Bonus/Day_05_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/5) |
+| 6  | Tuning Trouble | [Source](2022/Day_06/Day_06.cpp) | [Source](2022/Day_06_Bonus/Day_06_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/6) |
+| 7  | No Space Left On Device | [Source](2022/Day_07/Day_07.cpp) | [Source](2022/Day_07_Bonus/Day_07_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/7) |
+| 8  | Treetop Tree House | [Source](2022/Day_08/Day_08.cpp) | [Source](2022/Day_08_Bonus/Day_08_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/8) |
+| 9  | Rope Bridge | [Source](2022/Day_09/Day_09.cpp) | [Source](2022/Day_09_Bonus/Day_09_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/9) |
+| 10 | Cathode-Ray Tube | [Source](2022/Day_10/Day_10.cpp) | [Source](2022/Day_10_Bonus/Day_10_Bonus.cpp) | [Link](https://adventofcode.com/2022/day/10) |
 
 ## 2021
 
 | Day | Title            | Part 1 | Part 2 | AoC |
 |-----|------------------|--------|--------|-----|
-| 1 | Sonar Sweep | [Source](2021/Day_01/Day_01.cpp) | [Source](2021/Day_01_Bonus/Day_01_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/1) |
-| 2 | Dive | [Source](2021/Day_02/Day_02.cpp) | [Source](2021/Day_02_Bonus/Day_02_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/2) |
-| 3 | Binary Diagnostic | [Source](2021/Day_03/Day_03.cpp) | [Source](2021/Day_03_Bonus/Day_03_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/3) |
-| 4 | Giant Squid | [Source](2021/Day_04/Day_04.cpp) | [Source](2021/Day_04_Bonus/Day_04_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/4) |
-| 5 | Hydrothermal Venture | [Source](2021/Day_05/Day_05.cpp) | [Source](2021/Day_05_Bonus/Day_05_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/5) |
-| 6 | Lanternfish | [Source](2021/Day_06/Day_06.cpp) | [Source](2021/Day_06_Bonus/Day_06_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/6) |
-| 7 | The Treachery of Whales | [Source](2021/Day_07/Day_07.cpp) | [Source](2021/Day_07_Bonus/Day_07_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/7) |
-| 8 | Seven Segment Search | [Source](2021/Day_08/Day_08.cpp) | [Source](2021/Day_08_Bonus/Day_08_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/8) |
+| 1  | Sonar Sweep | [Source](2021/Day_01/Day_01.cpp) | [Source](2021/Day_01_Bonus/Day_01_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/1) |
+| 2  | Dive | [Source](2021/Day_02/Day_02.cpp) | [Source](2021/Day_02_Bonus/Day_02_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/2) |
+| 3  | Binary Diagnostic | [Source](2021/Day_03/Day_03.cpp) | [Source](2021/Day_03_Bonus/Day_03_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/3) |
+| 4  | Giant Squid | [Source](2021/Day_04/Day_04.cpp) | [Source](2021/Day_04_Bonus/Day_04_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/4) |
+| 5  | Hydrothermal Venture | [Source](2021/Day_05/Day_05.cpp) | [Source](2021/Day_05_Bonus/Day_05_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/5) |
+| 6  | Lanternfish | [Source](2021/Day_06/Day_06.cpp) | [Source](2021/Day_06_Bonus/Day_06_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/6) |
+| 7  | The Treachery of Whales | [Source](2021/Day_07/Day_07.cpp) | [Source](2021/Day_07_Bonus/Day_07_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/7) |
+| 8  | Seven Segment Search | [Source](2021/Day_08/Day_08.cpp) | [Source](2021/Day_08_Bonus/Day_08_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/8) |
+| 9  | Smoke Basin | [Source](2021/Day_09/Day_09.cpp) | [Source](2021/Day_09_Bonus/Day_09_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/9) |
+| 10 | Syntax Scoring | [Source](2021/Day_10/Day_10.cpp) | [Source](2021/Day_10_Bonus/Day_10_Bonus.cpp) | [Link](https://adventofcode.com/2021/day/10) |
 
 <hr/>
 
