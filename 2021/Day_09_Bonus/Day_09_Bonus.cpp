@@ -15,6 +15,7 @@ struct grid
     int rows;
 };
 
+// TODO: Replace with a better flood fill algorithm https://en.wikipedia.org/wiki/Flood_fill also benchmark them, I'll curious to see how my "naive" approach compares...
 bool mark_and_count(const grid& grid, const int start_x, const int start_y, int& count, const bool check_x = true, const bool check_y = true)
 {
     char& current = grid.buffer[start_y * grid.line + start_x];
