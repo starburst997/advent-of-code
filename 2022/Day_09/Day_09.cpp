@@ -15,7 +15,7 @@ enum direction : char
     right = 'R'
 };
 
-struct vector
+struct point
 {
     int x;
     int y;
@@ -46,8 +46,8 @@ int main(int argc, char* argv[])
     map<int, bool> positions{ {0, true} };
 
     constexpr int max_width = 10000;
-    vector head{};
-    vector tail{};
+    point head{};
+    point tail{};
     
     string line;
     while (getline(stream, line))

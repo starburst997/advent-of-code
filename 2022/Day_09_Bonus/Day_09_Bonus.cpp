@@ -15,7 +15,7 @@ enum direction : char
     right = 'R'
 };
 
-struct vector
+struct point
 {
     int x;
     int y;
@@ -48,8 +48,8 @@ int main(int argc, char* argv[])
     constexpr int max_width = 10000;
     constexpr int knots = 10;
     
-    vector rope[knots]{};
-    vector& head = rope[0];
+    point rope[knots]{};
+    point& head = rope[0];
     
     string line;
     while (getline(stream, line))
@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
         if (!read_integer(line, 2, line.length(), n)) continue;
 
         // Simulate rope
-        vector movement{};
+        point movement{};
         switch (dir)
         {
             case direction::up:
@@ -88,8 +88,8 @@ int main(int argc, char* argv[])
             for (int j = 1; j < knots; j++)
             {
                 // Need to move knot?
-                const vector& previous = rope[j - 1];
-                vector& current = rope[j];
+                const point& previous = rope[j - 1];
+                point& current = rope[j];
 
                 const int diff_x = previous.x - current.x;
                 const int diff_y = previous.y - current.y;
@@ -99,8 +99,8 @@ int main(int argc, char* argv[])
                 // Pretty happy to have figure this one out, I think this is the simplest way to achieve this?
                 // The rope "physics" wasn't at all what I expected at first
                 // Will need to check other people's solution to compare
-                if (diff_x != 0) current.x += diff_x / abs(diff_x);
-                if (diff_y != 0) current.y += diff_y / abs(diff_y);
+                if (diff_x != 0) current.x += diff_x > 0 ? 1 : -1;
+                if (diff_y != 0) current.y += diff_y > 0 ? 1 : -1;
                 
                 // Only count the tail
                 if (j != knots - 1) continue;
